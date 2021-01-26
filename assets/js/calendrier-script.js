@@ -5,7 +5,7 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, vous pouvez rechercher les dates concernant : \n').then(typeLoop)
+      typeText('Sur cette page, trouvez les dates concernant : \n').then(typeLoop)
     })
     
     function typeLoop() {

@@ -5,7 +5,7 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, retrouvez les informations relatives aux : \n').then(typeLoop)
+      typeText('Sur cette page, trouvez les informations relatives aux : \n').then(typeLoop)
     })
     
     function typeLoop() {
@@ -15,9 +15,6 @@ function init () {
         .then(() => typeText('Services alimentaires'))
         .then(() => wait(2000))
         .then(() => removeText('Services alimentaires'))
-        .then(() => typeText('Autres'))
-        .then(() => wait(2000))
-        .then(() => removeText('Autres'))
         .then(typeLoop)
     }
     
