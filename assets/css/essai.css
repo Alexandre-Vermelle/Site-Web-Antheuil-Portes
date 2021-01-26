@@ -28,7 +28,7 @@ z-index: -1;
 }
 .testimonial .pic:before{
     top: 0;
-    right: 140px;
+    right: 148px;
 }
 .testimonial .pic:after{
     bottom: 0;
@@ -41,7 +41,6 @@ z-index: -1;
 }
 .testimonial .testimonial-content{
     width: 70%;
-    height : 60%;
     float: right;
 }
 .testimonial .title{
@@ -49,7 +48,7 @@ z-index: -1;
     display: block;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(13, 48, 77);
+    color: #fff;
     margin: 0;
     text-transform: uppercase;
     padding-top: 20px;
@@ -61,18 +60,17 @@ z-index: -1;
     font-size: 15px;
     font-weight: 400;
     line-height: 27px;
-    color: rgb(13, 48, 77);
+    color: #fff;
     text-transform: capitalize;
     padding-left: 15px;
 }
 .testimonial .description{
   font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    color: rgb(13, 48, 77);
+    color: #fff;
     padding: 0 15px;
     margin: 0;
     position: relative;
-    text-align: justify;
 }
 
 .owl-theme .owl-controls{
@@ -330,12 +328,3 @@ h5 {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-/* Noir et Blanc*/
-
-
-
-.mayorPresentationBackgroundColor{
-background-color: rgb(174, 212, 218);
-}
-
-

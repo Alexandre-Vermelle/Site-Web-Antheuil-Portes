@@ -1,11 +1,26 @@
 
-//titleStyle
+//SLIDE COUNCIL
+ 
+$(document).ready(function(){
+  $("#testimonial-slider").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      margin:10,
+      pagination:true,
+      autoPlay:true
+  });
+});
+//FIN SLIDE COUNCIL
+
+//TITLE STYLE
 
 function init () {
 
   wait(1000).then(() => {
     clearText()
-    typeText('Retrouvez ici les informations concernant : ').then(typeLoop)
+    typeText('* Ici, retrouvez :  ').then(typeLoop)
   })
   
   function typeLoop() {
@@ -15,14 +30,13 @@ function init () {
       .then(() => typeText('Les bulletins municipaux'))
       .then(() => wait(2000))
       .then(() => removeText('Les bulletins municipaux'))
-      .then(() => typeText('Les documents administratifs à télécharger'))
+      .then(() => typeText('Les documents administratifs'))
       .then(() => wait(2000))
-      .then(() => removeText('Les documents administratifs à télécharger'))
+      .then(() => removeText('Les documents administratifs'))
       .then(typeLoop)
   }
   
 }
-
 
 // Source code 🚩
 
@@ -106,10 +120,6 @@ function removeText ({ length:amount }) {
   })
 }
 
-
 init()
 
-//titleStyle
-
-
-
+// FIN TITLE STYLE
