@@ -3,25 +3,25 @@
 
 function init () {
 
-    wait(1000).then(() => {
-      clearText()
-      typeText('Site internet d\'Antheuil-Portes : \n').then(typeLoop)
-    })
-    
-    function typeLoop() {
-      typeText('Petit village de 400 habitants')
-        .then(() => wait(2000))
-        .then(() => removeText('Petit village de 400 habitants'))
-        .then(() => typeText('Près de Compiègne dans l\'Oise (60)'))
-        .then(() => wait(2000))
-        .then(() => removeText('Près de Compiègne dans l\'Oise (60)'))
-        .then(() => typeText('Communauté de Communes du Pays des Sources'))
-        .then(() => wait(2000))
-        .then(() => removeText('Communauté de Communes du Pays des Sources'))
-        .then(typeLoop)
-    }
-    
+  wait(1000).then(() => {
+    clearText()
+    typeText('Site Internet d\'Antheuil Portes : \n').then(typeLoop)
+  })
+  
+  function typeLoop() {
+    typeText('Petit village de 400 habitants')
+      .then(() => wait(2000))
+      .then(() => removeText('Petit village de 400 habitants'))
+      .then(() => typeText('Près de Compiègne dans l\'Oise'))
+      .then(() => wait(2000))
+      .then(() => removeText('Près de Compiègne dans l\'Oise'))
+      .then(() => typeText('Communauté de communes du Pays des Sources'))
+      .then(() => wait(2000))
+      .then(() => removeText('Communauté de communes du Pays des Sources'))
+      .then(typeLoop)
   }
+  
+}
   
   
   // Source code 🚩
