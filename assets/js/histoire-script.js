@@ -5,16 +5,16 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, découvrez l\'histoire du village grâce à : \n').then(typeLoop)
+      typeText('Sur cette page, découvrez : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Des récits')
+      typeText('L\'Histoire du village')
         .then(() => wait(2000))
-        .then(() => removeText('Des récits'))
-        .then(() => typeText('Des photos'))
+        .then(() => removeText('L\'Histoire du village'))
+        .then(() => typeText('Des photos anciennes'))
         .then(() => wait(2000))
-        .then(() => removeText('Des photos'))
+        .then(() => removeText('Des photos anciennes'))
         .then(() => typeText('Des anecdotes'))
         .then(() => wait(2000))
         .then(() => removeText('Des anecdotes'))

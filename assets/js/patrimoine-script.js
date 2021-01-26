@@ -5,19 +5,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, découvrez Antheuil Portes et : \n').then(typeLoop)
+      typeText('Sur cette page, découvrez : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Son patrimoine bâti')
+      typeText('Le patrimoine bâti du village')
         .then(() => wait(2000))
-        .then(() => removeText('Son patrimoine bâti'))
-        .then(() => typeText('Son patrimoine culturel'))
+        .then(() => removeText('Le patrimoine bâti du village'))
+        .then(() => typeText('Le patrimoine culturel de la région'))
         .then(() => wait(2000))
-        .then(() => removeText('Son patrimoine culturel'))
-        .then(() => typeText('Son patrimoine naturel'))
+        .then(() => removeText('Le patrimoine culturel de la région'))
+        .then(() => typeText('Le patrimoine naturel du secteur'))
         .then(() => wait(2000))
-        .then(() => removeText('Son patrimoine naturel'))
+        .then(() => removeText('Le patrimoine naturel du secteur'))
         .then(typeLoop)
     }
     

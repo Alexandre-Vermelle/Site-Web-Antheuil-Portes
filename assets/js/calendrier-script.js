@@ -5,19 +5,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, trouvez les dates concernant : \n').then(typeLoop)
+      typeText('Sur cette page, trouvez les dates : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Le jour de ramassage des déchets ménagers')
+      typeText('Du jour de ramassage des déchets ménagers')
         .then(() => wait(2000))
-        .then(() => removeText('Le jour de ramassage des déchets ménagers'))
-        .then(() => typeText('Le jour de ramassage des déchets plastiques'))
+        .then(() => removeText('Du jour de ramassage des déchets ménagers'))
+        .then(() => typeText('Du jour de ramassage des déchets plastiques'))
         .then(() => wait(2000))
-        .then(() => removeText('Le jour de ramassage des déchets plastiques'))
-        .then(() => typeText('Les événements festifs...'))
+        .then(() => removeText('Du jour de ramassage des déchets plastiques'))
+        .then(() => typeText('Des événements festifs...'))
         .then(() => wait(2000))
-        .then(() => removeText('Les événements festifs...'))
+        .then(() => removeText('Des événements festifs...'))
         .then(typeLoop)
     }
     

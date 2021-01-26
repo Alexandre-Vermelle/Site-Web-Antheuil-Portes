@@ -5,16 +5,16 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, trouvez les informations relatives aux : \n').then(typeLoop)
+      typeText('Sur cette page, trouvez des infos sur : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Services techniques')
+      typeText('Les services techniques')
         .then(() => wait(2000))
-        .then(() => removeText('Services techniques'))
-        .then(() => typeText('Services alimentaires'))
+        .then(() => removeText('Les services techniques'))
+        .then(() => typeText('Les services alimentaires'))
         .then(() => wait(2000))
-        .then(() => removeText('Services alimentaires'))
+        .then(() => removeText('Les services alimentaires'))
         .then(typeLoop)
     }
     
