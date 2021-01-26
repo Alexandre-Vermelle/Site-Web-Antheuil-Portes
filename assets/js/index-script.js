@@ -14,7 +14,7 @@ function init () {
         .then(() => removeText('Petit village de 400 habitants'))
         .then(() => typeText('Près de Compiègne dans l\'Oise (60)'))
         .then(() => wait(2000))
-        .then(() => removeText('Situé à proximité de Compiègne dans l\'Oise (60)'))
+        .then(() => removeText('Près de Compiègne dans l\'Oise (60)'))
         .then(() => typeText('Communauté de Communes du Pays des Sources'))
         .then(() => wait(2000))
         .then(() => removeText('Communauté de Communes du Pays des Sources'))
