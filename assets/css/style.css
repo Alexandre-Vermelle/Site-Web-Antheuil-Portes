@@ -28,14 +28,14 @@ z-index: -1;
 }
 .testimonial .pic:before{
     top: 0;
-    right: 140px;
+    right: 78px;
 }
 .testimonial .pic:after{
     bottom: 0;
     left: -20px;
 }
 .testimonial .pic img{
-    width: 50%;
+    width: 60%;
     height: auto;
     border: 3px solid rgb(13, 48, 77);
 }

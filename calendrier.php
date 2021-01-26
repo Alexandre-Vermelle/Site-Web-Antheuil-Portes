@@ -68,7 +68,6 @@ require 'calendarCtrl.php';
                     </div>
                     <div class= "titleStyle col-sm-12 ml-5"> 
                         <span id="type-text">...</span>
-                        <span class="blinking-cursor">_</span>
                     </div>
                 </div>
             </section>

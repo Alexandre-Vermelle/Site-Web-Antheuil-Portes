@@ -5,19 +5,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Retrouvez ici des informations pratiques sur : ').then(typeLoop)
+      typeText('Retrouvez ici des informations pratiques sur : \n').then(typeLoop)
     })
     
     function typeLoop() {
       typeText('Sur les services médicaux du secteur')
         .then(() => wait(2000))
         .then(() => removeText('Sur les services médicaux du secteur'))
-        .then(() => typeText('Sur les établissements scolaires à proximité'))
+        .then(() => typeText('Sur les établissements scolaires'))
         .then(() => wait(2000))
-        .then(() => removeText('Sur les établissements scolaires à proximité'))
-        .then(() => typeText('Sur les services alimentaires les plus proches'))
+        .then(() => removeText('Sur les établissements scolaires'))
+        .then(() => typeText('Sur les services alimentaires'))
         .then(() => wait(2000))
-        .then(() => removeText('Sur les services alimentaires les plus proches'))
+        .then(() => removeText('Sur les services alimentaires'))
         .then(typeLoop)
     }
     
