@@ -76,11 +76,11 @@ z-index: -1;
 }
 
 .owl-theme .owl-controls{
-    width: 70%;
+    width: 100%;
     margin: 0;
     text-align: left;
     position: absolute;
-    bottom: 0;
+    bottom: -20;
     right: 0;
 }
 

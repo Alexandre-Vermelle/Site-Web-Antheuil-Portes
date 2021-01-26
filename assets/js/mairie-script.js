@@ -20,7 +20,7 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Ici, retrouvez : \n').then(typeLoop)
+      typeText('Sur cette page, retrouvez les informations concernant : \n').then(typeLoop)
     })
     
     function typeLoop() {

@@ -5,19 +5,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Retrouvez ici des informations sur : \n').then(typeLoop)
+      typeText('Sur cette page, découvrez Antheuil Portes et : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Le patrimoine bâti')
+      typeText('Son patrimoine bâti')
         .then(() => wait(2000))
-        .then(() => removeText('Le patrimoine bâti'))
-        .then(() => typeText('Le patrimoine culturel'))
+        .then(() => removeText('Son patrimoine bâti'))
+        .then(() => typeText('Son patrimoine culturel'))
         .then(() => wait(2000))
-        .then(() => removeText('Le patrimoine culturel'))
-        .then(() => typeText('Le patrimoine naturel'))
+        .then(() => removeText('Son patrimoine culturel'))
+        .then(() => typeText('Son patrimoine naturel'))
         .then(() => wait(2000))
-        .then(() => removeText('Le patrimoine naturel'))
+        .then(() => removeText('Son patrimoine naturel'))
         .then(typeLoop)
     }
     
