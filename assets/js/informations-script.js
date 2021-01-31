@@ -1,3 +1,53 @@
+$(document).ready(function(){
+  $("#testimonial-slider").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      margin:10,
+      pagination:true,
+      autoPlay:true
+  });
+});
+
+$(document).ready(function(){
+  $("#testimonial-slider1").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      margin:10,
+      pagination:true,
+      autoPlay:true
+  });
+});
+
+$(document).ready(function(){
+  $("#testimonial-slider2").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      margin:10,
+      pagination:true,
+      autoPlay:true
+  });
+});
+
+$(document).ready(function(){
+  $("#testimonial-slider3").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      margin:10,
+      pagination:true,
+      autoPlay:true
+  });
+});
+
+
+
 
 //titleStyle
 
@@ -110,6 +160,7 @@ function init () {
   init()
 
   //titleStyle
+
   
   
   

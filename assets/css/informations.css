@@ -1,0 +1,190 @@
+
+
+/* DEBUT TITRE JAVASCRIPT */
+.titleStyle {
+  min-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(13, 48, 77);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: left;
+}
+.blinking-cursor {
+  pointer-events: none;
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+  visibility: hidden;
+  }
+}
+/*FIN TITRE JAVASCRIPT */
+
+/* GENERAL */
+.navbar-brand {
+  font-size: 22px;
+  font-weight:500;
+}
+#footer {
+  background-color: rgb(13, 48, 77);
+  color: white;
+  text-align: center;
+}
+
+#titlePresentation {
+  margin-top: 80px;
+}
+/* GENERAL */
+
+
+/*SLIDE MEDECINS*/
+ 
+.demo{ background:rgb(174, 212, 218); }
+.testimonial .pic{
+    width: 22%;
+    padding: 20px 0;
+    margin: 0 6% 0 2%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.testimonial .pic:before {
+content: "";
+width: 130px;
+height: 150px;
+background: rgb(13, 48, 77);
+position: absolute;
+z-index: -1;
+}
+.testimonial .pic:after{
+    content: "";
+    width: 130px;
+    height: 150px;
+    background: rgb(13, 48, 77);
+    position: absolute;
+    z-index: -1;
+}
+.testimonial .pic:before{
+    top: 20px;
+    right: -20px;
+}
+.testimonial .pic:after{
+    bottom: 0;
+    left: -20px;
+}
+.testimonial .pic img{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    border: 3px solid rgb(13, 48, 77);
+}
+.testimonial .testimonial-content{
+    width: 70%;
+    height : 60%;
+    float: right;
+}
+.testimonial .title{
+  font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(13, 48, 77);
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+.testimonial .post{
+  font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgb(13, 48, 77);
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+.testimonial .description{
+  font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(13, 48, 77);
+    padding: 0 15px;
+    margin: 0;
+    position: relative;
+    text-align: justify;
+}
+.owl-theme .owl-controls{
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 990px){
+    .testimonial{ text-align: center; }
+    .testimonial .pic{
+        width: 200px;
+        margin: 0 auto;
+        float: none;
+    }
+    .testimonial .pic:before,
+    .testimonial .pic:after{
+        width: 80px;
+        height: 100px;
+    }
+    .testimonial .testimonial-content{
+        width: 100%;
+        float: none;
+    }
+    .testimonial .title{
+        padding: 15px 0 0 0;
+    }
+    .testimonial .post{
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .owl-theme .owl-controls{
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+    
+    .testimonial .pic:before{
+      top: 20px;
+      right: -20px;
+  }
+  .testimonial .pic:after{
+      bottom: 0;
+      left: -18px;
+  }  
+
+}
+/*FIN SLIDE MEDECINS*/
+
+
+.testimonial-content {
+  text-align: center;
+}
+
+  /* DEBUT PARALLAX 1 */
+  .parallax {
+    /* The image used{ */
+    background-image: url("mairie-antheuil-parallax.jpg");
+  
+    /* Set a specific height */
+    height: 300px;
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 70%;
+  }  
+  /* FIN PARALLAX 1 */
+

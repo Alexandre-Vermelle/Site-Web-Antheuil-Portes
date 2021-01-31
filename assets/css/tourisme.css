@@ -1,0 +1,182 @@
+
+
+
+/* DEBUT TITRE JAVASCRIPT */
+.titleStyle {
+  min-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(13, 48, 77);
+  font-size: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: left;
+}
+.blinking-cursor {
+  pointer-events: none;
+  user-select: none;
+  animation: blink 1s steps(2, start) infinite;
+}
+@keyframes blink {
+  to {
+  visibility: hidden;
+  }
+}
+/*FIN TITRE JAVASCRIPT */
+
+
+
+
+
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight:500;
+}
+#footer {
+  background-color: rgb(13, 48, 77);
+  color: white;
+  text-align: center;
+}
+
+#titlePresentation {
+  margin-top: 80px;
+}
+/* box */
+
+.box{
+  background: linear-gradient(180deg, rgb(13, 48, 77) 0%,rgb(13, 48, 77) 100%);
+  font-family: 'Nanum Gothic', sans-serif;
+  border-radius: 25px 0;
+  position: relative;
+  overflow: hidden;
+}
+.box:before,
+.box:after,
+.box .box-content:before,
+.box .box-content:after{
+  content: "";
+  background: rgb(174, 212, 218);
+  width: 50%;
+  height: 4px;
+  transform: scaleX(0);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 1;
+  transition: all 600ms ease;
+}
+.box:after{
+  top: auto;
+  bottom: 15px;
+  left: auto;
+  right: 15px;
+}
+.box .box-content:before,
+.box .box-content:after{
+  width: 4px;
+  height: 50%;
+  transform: scaleY(0);
+}
+.box .box-content:after{
+  left: auto;
+  right: 15px;
+  top: auto;
+  bottom: 15px;
+}
+.box:hover:before,
+.box:hover:after,
+.box:hover .box-content:before,
+.box:hover .box-content:after{
+  transform: scale(1);
+}
+.box img{
+  width: 100%;
+  height: auto;
+  transform: scale3d(1.1, 1.1, 1);
+  transition: all 0.25s linear;
+}
+.box:hover img{
+  opacity: 0.25;
+  transform: scale(1.25);
+}
+.box .inner-content{
+  color: rgb(174, 212, 218);
+  text-align: center;
+  width: 70%;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transition: all 600ms ease;
+}
+.box:hover .inner-content{
+  opacity: 1;
+  top: 50%;
+}
+.box .title{
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 3px;
+}
+.box .post{
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0 0 12px;
+  display: block;
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.box .icon li{
+  display: inline-block;
+  margin: 0 4px;
+}
+.box .icon li a{
+  color: rgb(174, 212, 218);
+  font-size: 18px;
+  line-height: 32px;
+  height: 35px;
+  width: 35px;
+  border: 2px solid rgb(174, 212, 218);
+  border-radius: 10px 0 10px 0;
+  display: block;
+  transition: all 0.3s;
+}
+.box .icon li a:hover{
+  color: rgb(13, 48, 77);
+  background: rgb(174, 212, 218);
+  border-radius: 0 10px 0 10px;
+}
+@media only screen and (max-width:990px){
+  .box { margin: 0 0 30px; }
+}
+.row, .pt-4, .py-4 {
+  padding: 0rem;
+}
+
+/* DEBUT PARALLAX 1 */
+.parallax {
+  /* The image used{ */
+  background-image: url("mairie-antheuil-parallax.jpg");
+
+  /* Set a specific height */
+  height: 300px;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 70%;
+}  
+/* FIN PARALLAX 1 */
+
+
+
