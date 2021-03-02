@@ -9,9 +9,9 @@ function init () {
     })
     
     function typeLoop() {
-      typeText('L\'Histoire du village')
+      typeText('L\'histoire du village')
         .then(() => wait(2000))
-        .then(() => removeText('L\'Histoire du village'))
+        .then(() => removeText('L\'histoire du village'))
         .then(() => typeText('Des photos anciennes'))
         .then(() => wait(2000))
         .then(() => removeText('Des photos anciennes'))

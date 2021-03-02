@@ -5,28 +5,19 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, découvrez : \n').then(typeLoop)
+      typeText('Sur cette page, retrouvez : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Compiègne')
+      typeText('Le Maire et le Conseil Municipal')
         .then(() => wait(2000))
-        .then(() => removeText('Compiègne'))
-        .then(() => typeText('Chantilly'))
+        .then(() => removeText('Le Maire et le Conseil Municipal'))
+        .then(() => typeText('Les bulletins municipaux'))
         .then(() => wait(2000))
-        .then(() => removeText('Chantilly'))
-        .then(() => typeText('Ricquebourg'))
+        .then(() => removeText('Les bulletins municipaux'))
+        .then(() => typeText('Les documents administratifs'))
         .then(() => wait(2000))
-        .then(() => removeText('Ricquebourg'))
-        .then(() => typeText('Pierrefonds'))
-        .then(() => wait(2000))
-        .then(() => removeText('Pierrefonds'))
-        .then(() => typeText('Amiens'))
-        .then(() => wait(2000))
-        .then(() => removeText('Amiens'))
-        .then(() => typeText('Coucy le Château Auffrique'))
-        .then(() => wait(2000))
-        .then(() => removeText('Coucy le Château Auffrique'))
+        .then(() => removeText('Les documents administratifs'))
         .then(typeLoop)
     }
     
@@ -117,8 +108,5 @@ function init () {
   
   
   init()
-
+  
   //titleStyle
-  
-  
-  

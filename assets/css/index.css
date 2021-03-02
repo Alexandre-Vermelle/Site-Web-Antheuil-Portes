@@ -122,6 +122,10 @@ font-weight: bold;
   margin-top: 80px;
 }
 
+.logo {
+  border-radius: 10px;
+}
+
 /* GENERAL */
 
 /* CARD */

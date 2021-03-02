@@ -27,7 +27,7 @@
 
 
 
-/*GENERAL */
+
 .navbar-brand {
   font-size: 22px;
   font-weight:500;
@@ -41,11 +41,6 @@
 #titlePresentation {
   margin-top: 80px;
 }
-.logo {
-  border-radius: 10px;
-}
-/*FIN GENERAL */
-
 /* box */
 
 .box{
@@ -161,27 +156,6 @@
 @media only screen and (max-width:990px){
   .box { margin: 0 0 30px; }
 }
-.row, .pt-4, .py-4 {
-  padding: 0rem;
-}
-
-/* DEBUT PARALLAX 1 */
-.parallax {
-  /* The image used{ */
-  background-image: url("mairie-antheuil-parallax.jpg");
-
-  /* Set a specific height */
-  height: 300px;
-
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 70%;
-}  
-/* FIN PARALLAX 1 */
 
 
 

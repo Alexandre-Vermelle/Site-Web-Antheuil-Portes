@@ -84,5 +84,8 @@ text-align: center;
 #titlePresentation {
   margin-top: 80px;
 }
+.logo {
+  border-radius: 10px;
+}
 
 /* GENERAL */
