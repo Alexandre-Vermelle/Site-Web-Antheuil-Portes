@@ -146,7 +146,19 @@ require 'calendarCtrl.php';
                     </table>
                 </div>
                 <?php endif; ?>    
+
+                <div class="container pt-5">
+        <div class="row">
+            <div class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax"></div>
             </section>
+
+
             <!--SECTION FOOTER-->
             <section id="footer">
                 <div class="container">
