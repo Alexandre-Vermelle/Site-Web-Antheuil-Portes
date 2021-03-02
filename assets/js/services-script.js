@@ -5,16 +5,22 @@ function init () {
 
     wait(1000).then(() => {
       clearText()
-      typeText('Sur cette page, trouvez des infos sur : \n').then(typeLoop)
+      typeText('Sur cette page, des infos sur : \n').then(typeLoop)
     })
     
     function typeLoop() {
-      typeText('Les services techniques')
+      typeText('L\'école du village')
+        .then(() => wait(2000))
+        .then(() => removeText('L\'école du village'))
+        .then(() => typeText('La salle des fêtes'))
+        .then(() => wait(2000))
+        .then(() => removeText('La salle des fêtes'))
+        .then(() => typeText('Les services techniques'))
         .then(() => wait(2000))
         .then(() => removeText('Les services techniques'))
-        .then(() => typeText('Les services alimentaires'))
+        .then(() => typeText('Les activités sportives'))
         .then(() => wait(2000))
-        .then(() => removeText('Les services alimentaires'))
+        .then(() => removeText('Les activités sportives'))
         .then(typeLoop)
     }
     
